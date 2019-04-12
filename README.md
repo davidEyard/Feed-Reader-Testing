@@ -1,30 +1,21 @@
 # Project Overview
 
 This project was handed over to me from Udacity to be used as a web-based application that reads RSS feeds.[Jasmine](http://jasmine.github.io/) was already included from Udacity but it was incomplete and now it is completed by me.
-Click [HERE](https://davideyard.github.io/Feed-Reader-Testing/#) to run it in your browser!
+Clone or download this project to your machine to see the magic before your eyes.
 
 
 # Steps for Success
 
-1. Wrote a test that loops through each feed in the `allFeeds` object and ensured that it has a URL defined _and_ that the URL is not empty
+1. Wrote a new test suite named `"The menu"`
+- Using Chrome Dev Tools allowed me to test the class 'menu-hidden' on <body> by toggling the side menu. Used Jquery to select the BODY element. The click() event helped ensured that the 'menu-hidden' class existed to make sure the function worked.
 
-2. Wrote a test that loops through each feed in the `allFeeds` object and ensured it has a name defined.
+2. Wrote a test suite named `"Initial Entries"`.
+- app.js runs 'loadFeed' function and by doing so the .feed HTML checks all entries.
 
-3. Wrote a new test suite named `"The menu"`
-
-4. Wrote a test that ensured the menu element that is hidden by default.
-
-5. Wrote a test that ensured the menu and changes the visibility when the menu icon is clicked on. The test also has two expectations which is: the menu displays itself when clicked on, and hides when it is clicked on again.
-
-6. Wrote a test suite named `"Initial Entries"`.
-
-7. Wrote a test that ensured the `loadFeed` function.
-
-8. Wrote a test suite named `"New Feed Selection".
-
-9. Wrote a test that ensured a new feed which is loaded by the `loadFeed` function.
+3. Wrote a test suite named `"New Feed Selection".
+-The HTML content is different from the second feed and the first feed , by using this test both feeds can be easily compared to see what is different.
 
 # Dependencies
 
-jasmine, Jquery, and Bootstrap.
+jasmine, and Jquery
 
