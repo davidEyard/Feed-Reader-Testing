@@ -1,7 +1,7 @@
 # Project Overview
 
 This project was handed over to me from Udacity to be used as a web-based application that reads RSS feeds.[Jasmine](http://jasmine.github.io/) was already included from Udacity but it was incomplete and now it is completed by me.
-Click [HERE](https://davideyard.github.io/Feeder-Reader-Testing) to run it in your browser!
+Click [HERE](https://davideyard.github.io/Feed-Reader-Testing/#) to run it in your browser!
 
 
 # Steps for Success
