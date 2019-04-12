@@ -5,7 +5,7 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-        it('each has url', function(){
+        it('Each feed has URL', function(){
             for(let feed of allFeeds){
                 expect(feed.url).toBeDefined();
                 expect(feed.url.constructor).toBe(String);
@@ -16,7 +16,7 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
-        it('each has name', function(){
+        it('Each has a unique name', function(){
             for(let feed of allFeeds) {
                 expect(feed.name).toBeDefined();
                 expect(feed.name.constructor).toBe(String);
@@ -33,8 +33,8 @@ describe('The menu', function(){
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
-    it('hidden by default', function(){
-        let isHidden = document.body.classList.contains('menu-hidden');
+    it('Hidden by default', function(){
+        let isHidden = document.body.classList.contains('hidden-menu');
         expect(isHidden).toBe(true);
     });
          /* TODO: Write a test that ensures the menu changes
@@ -43,7 +43,7 @@ describe('The menu', function(){
           * clicked and does it hide when clicked again.
           */
 
-          it('toggles the view when icon is clicked on', function(){
+          it('View is toggled when clicked on', function(){
               let menuIcon = document.querySelector('a.menu-icon-link');
               menuIcon.click();
               expect(document.body.classList.contains('menu-hidden')).toBe(false)
@@ -64,7 +64,7 @@ describe('The menu', function(){
              loadFeed(1, done);
          });
 
-         it('Entries in feed container', function(){
+         it('Feed Container Entries', function(){
              let feedContainer = document.querySelector('div.feed');
              let entries = feedContainer.querySelectorAll('article.entry');
              expect(entries.length).toBeGreaterThan(0);
@@ -86,7 +86,7 @@ describe('The menu', function(){
                     });
                 });
             });
-                it('Loads new Feeds', function(){
+                it('All loaded new Feeds', function(){
                     expect(firstFeed).not.toBe(secondFeed);
                 });
             });
