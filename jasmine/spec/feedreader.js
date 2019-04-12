@@ -34,7 +34,7 @@ describe('The menu', function(){
          * hiding/showing of the menu element.
          */
     it('Hidden by default', function(){
-        let isHidden = document.body.classList.contains('hidden-menu');
+        let isHidden = document.body.classList.contains('menu-hidden');
         expect(isHidden).toBe(true);
     });
          /* TODO: Write a test that ensures the menu changes
@@ -46,9 +46,9 @@ describe('The menu', function(){
           it('View is toggled when clicked on', function(){
               let menuIcon = document.querySelector('a.menu-icon-link');
               menuIcon.click();
-              expect(document.body.classList.contains('menu-hidden')).toBe(false)
+              expect(document.body.classList.contains('menu-hidden')).toBe(false);
               menuIcon.click();
-              expect(document.body.classList.contains('menu-hidden')).toBe(true)
+              expect(document.body.classList.contains('menu-hidden')).toBe(true);
             });
           });
     /* TODO: Write a new test suite named "Initial Entries" */
